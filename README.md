@@ -2,6 +2,8 @@
 
 A smart charging station for public environments like universities, transportation hubs and commercial areas. Features coin + RFID system with multi-port simultaneous charging capability.
 
+## [Demo Video](https://www.youtube.com/watch?v=9nf6AHERbcg)  
+
 ## Key Features
 
 - **Dual Option**: Coin-operated (Ports 2-4) and RFID access (Port 1)
@@ -98,7 +100,7 @@ Tap RFID card → Press Button 1 → Charging starts (20 seconds)
 
 Developed for **ETE 320: Microprocessor and Microcontroller Sessional** at **Chittagong University of Engineering & Technology (CUET)**
 
-- **Wahida Zannat** — [@WahidaZannat]()  
+- **Wahida Zannat** — [@WahidaZannat](https://github.com/Wahida23)  
 - **Puspita Barua** — [@PuspitaBarua](https://github.com/PuspitaBarua)  
 - **Nisat Sayara** — [@NisatSayara](https://github.com/nisatsayara)  
 - **Maowa Alam Khan** — [@MaowaAlamKhan](https://github.com/Maowakhan)  
