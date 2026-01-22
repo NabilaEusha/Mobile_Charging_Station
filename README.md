@@ -1,10 +1,10 @@
 # Mobile Charging Station
 
-A smart charging station for public environments like universities, transportation hubs and commercial areas. Features dual authentication (coin + RFID) with multi-port simultaneous charging capability.
+A smart charging station for public environments like universities, transportation hubs and commercial areas. Features coin + RFID system with multi-port simultaneous charging capability.
 
 ## Key Features
 
-- **Dual Authentication**: Coin-operated (Ports 2-4) and RFID access (Port 1)
+- **Dual Option**: Coin-operated (Ports 2-4) and RFID access (Port 1)
 - **Multi-Port Support**: 4 independent relay-controlled charging ports
 - **Real-Time Display**: LCD showing system status and remaining time
 - **Auto Cutoff**: Time-bound charging with automatic power termination
