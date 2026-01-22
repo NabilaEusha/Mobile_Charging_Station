@@ -1,31 +1,18 @@
-# Mobile_Charging_Station
-Developed an ESP32-based coin-operated multi-port mobile charging system with real-time control, relay-based power management, LCD interface and RFID authentication for secure, time-bound public charging.
+# Mobile Charging Station
+
+ESP32-based coin-operated multi-port mobile charging system with real-time control, relay-based power management, LCD interface and RFID authentication for secure, time-bound public charging.
 
 ## Overview
 
-This project implements a smart charging station designed for deployment in public environments such as universities, transportation hubs and commercial areas. The system features dual authentication mechanisms (coin-based and RFID) and supports multiple simultaneous charging sessions with independent port control.
+A smart charging station for public environments like universities, transportation hubs and commercial areas. Features dual authentication (coin + RFID) with multi-port simultaneous charging capability.
 
 ## Key Features
 
-- **Dual Authentication System**
-  - Coin-operated charging for public access (Ports 2, 3, 4)
-  - RFID-based secure authentication for authorized users (Port 1)
-  
-- **Multi-Port Support**
-  - 4 independent charging ports with relay-based control
-  - Simultaneous charging capability for multiple users
-  
-- **Real-Time Monitoring**
-  - LCD display showing system status and remaining time
-  - Port selection through dedicated push buttons
-  
-- **Time-Bound Charging**
-  - Automatic power cutoff after allocated time
-  
-- **Safety Features**
-  - Electrical isolation between ports using relay modules
-  - Debounced input handling to prevent false triggers
-  - Automatic timeout for coin validity
+- **Dual Authentication**: Coin-operated (Ports 2-4) and RFID access (Port 1)
+- **Multi-Port Support**: 4 independent relay-controlled charging ports
+- **Real-Time Display**: LCD showing system status and remaining time
+- **Auto Cutoff**: Time-bound charging with automatic power termination
+- **Safety**: Debounced inputs, electrical isolation, coin timeout protection
 
 ## Hardware Components
 
@@ -39,7 +26,6 @@ This project implements a smart charging station designed for deployment in publ
 
 ## Pin Configuration
 
-### ESP32 Pin Assignments
 ```
 Relay Pins:    25, 26, 27, 14 (Ports 1-4)
 Button Pins:   32, 33, 34, 35 (Port selection 1-4)
@@ -49,85 +35,85 @@ RFID RST:      GPIO 4
 LCD (I2C):     SDA-21, SCL-22
 ```
 
-## Software Architecture
+## Libraries Required
 
-### Libraries Required
 - `Wire.h` - I2C communication
 - `LiquidCrystal_I2C.h` - LCD control
-- `SPI.h` - SPI communication for RFID
-- `MFRC522.h` - RFID reader interface
+- `SPI.h` - SPI communication
+- `MFRC522.h` - RFID interface
 
+## Installation
 
-### Prerequisites
-```bash
+**Prerequisites:**
 - Arduino IDE (1.8.x or higher)
 - ESP32 Board Support Package
-- Required libraries (listed above)
-```
 
-### Installation
+**Steps:**
 
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone https://github.com/NabilaEusha/Mobile_Charging_Station
    cd Mobile_Charging_Station
    ```
 
-2. **Install dependencies**
+2. Install dependencies
    - Open Arduino IDE
    - Install ESP32 board support via Board Manager
    - Install required libraries via Library Manager
 
-3. **Hardware setup**
-   - Connect components according to pin configuration
-   - Ensure proper power supply (12V for coin acceptor, 5V for ESP32)
+3. Hardware setup
+   - Connect components per pin configuration
+   - Power: 12V for coin acceptor, 5V for ESP32
 
-4. **Upload code**
+4. Upload code
    - Open `esp32/multiportcharge.ino`
-   - Select ESP32 Dev Module as board
-   - Upload to your ESP32
+   - Select ESP32 Dev Module
+   - Upload to board
 
 ## Simulation
-- Basic functionality can be tested using **Wokwi** before hardware deployment.
+
+Basic functionality can be tested using **Wokwi** before hardware deployment.
 
 ## Usage
-- **Coin-Based Charging:**  
-  Insert a coin → Press Button 2 / 3 / 4 → Charging starts
 
-- **RFID-Based Charging:**  
-  Tap RFID card → Press Button 1 → Charging starts (20 seconds)
+**Coin-Based Charging:**  
+Insert coin → Press Button 2/3/4 → Charging starts
 
+**RFID-Based Charging:**  
+Tap RFID card → Press Button 1 → Charging starts (20 seconds)
 
-## Known Limitations
+## Limitations
 
-- Coin acceptor may generate false pulses due to mechanical vibrations
-- Fixed charging current (no adaptive charging)
-- No network-based payment integration (mobile wallets, etc.)
-- Breadboard prototype not suitable for harsh environments
+- Coin acceptor may generate false pulses from mechanical vibrations
+- Fixed charging current (no adaptive/fast charging)
+- No mobile payment integration
+- Breadboard prototype unsuitable for harsh environments
 
 ## Future Enhancements
 
-- [ ] Mobile payment integration (bKash, Nagad, etc.)
-- [ ] Dynamic charging and fast charging current adaptation
-- [ ] Cloud-based usage analytics
-- [ ] PCB design for robust deployment
-- [ ] Weatherproof enclosure design
-- [ ] Solar power option for outdoor installations
-- [ ] User authentication database
-- [ ] Remote monitoring and control
+- Mobile payment (bKash, Nagad)
+- Dynamic/fast charging support
+- Cloud analytics
+- PCB design for deployment
+- Weatherproof enclosure
+- Solar power option
+- User authentication database
+- Remote monitoring
 
-## Team Members
+## Team
 
-This project was developed as part of the **ETE 320: Microprocessor and Microcontroller Sessional** course at  
-**Chittagong University of Engineering & Technology (CUET)**.
+Developed for **ETE 320: Microprocessor and Microcontroller Sessional** at **Chittagong University of Engineering & Technology (CUET)**
 
 - **Wahida Zannat** — [@WahidaZannat]()  
 - **Puspita Barua** — [@PuspitaBarua](https://github.com/PuspitaBarua)  
 - **Nisat Sayara** — [@NisatSayara](https://github.com/nisatsayara)  
 - **Maowa Alam Khan** — [@MaowaAlamKhan](https://github.com/Maowakhan)  
-- **Nabila Sultana** — [@NabilaSultana](https://github.com/NabilaSultana)
-
+- **Nabila Sultana** — [@NabilaSultana](https://github.com/NabilaEusha)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions welcome! Feel free to submit a Pull Request.
+
+---
+
+⭐ Star this repo if you find it useful!
