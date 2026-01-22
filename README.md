@@ -116,12 +116,12 @@ LCD (I2C):     SDA-21, SCL-22
 - [ ] User authentication database
 - [ ] Remote monitoring and control
 
-## 👥 Team Members
+## Team Members
 
 This project was developed as part of the **ETE 320: Microprocessor and Microcontroller Sessional** course at  
 **Chittagong University of Engineering & Technology (CUET)**.
 
-- **Wahida Zannat** — [@WahidaZannat](https://github.com/WahidaZannat)  
+- **Wahida Zannat** — [@WahidaZannat]()  
 - **Puspita Barua** — [@PuspitaBarua](https://github.com/PuspitaBarua)  
 - **Nisat Sayara** — [@NisatSayara](https://github.com/nisatsayara)  
 - **Maowa Alam Khan** — [@MaowaAlamKhan](https://github.com/Maowakhan)  
