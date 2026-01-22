@@ -39,8 +39,6 @@ LCD (I2C):     SDA-21, SCL-22
 
 - `Wire.h` - I2C communication
 - `LiquidCrystal_I2C.h` - LCD control
-- `SPI.h` - SPI communication
-- `MFRC522.h` - RFID interface
 
 ## Installation
 
@@ -114,6 +112,3 @@ Developed for **ETE 320: Microprocessor and Microcontroller Sessional** at **Chi
 
 Contributions welcome! Feel free to submit a Pull Request.
 
----
-
-⭐ Star this repo if you find it useful!
