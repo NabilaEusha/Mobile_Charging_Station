@@ -1,9 +1,5 @@
 # Mobile Charging Station
 
-ESP32-based coin-operated multi-port mobile charging system with real-time control, relay-based power management, LCD interface and RFID authentication for secure, time-bound public charging.
-
-## Overview
-
 A smart charging station for public environments like universities, transportation hubs and commercial areas. Features dual authentication (coin + RFID) with multi-port simultaneous charging capability.
 
 ## Key Features
