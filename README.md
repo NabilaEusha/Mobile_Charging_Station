@@ -2,7 +2,7 @@
 
 A smart charging station for public environments like universities, transportation hubs and commercial areas. Features coin + RFID system with multi-port simultaneous charging capability.
 
-## [Demo Video](https://www.youtube.com/watch?v=9nf6AHERbcg)  
+## [Demo Video](https://youtu.be/9Yhn-W-Xvgk)  
 
 ## Key Features
 
